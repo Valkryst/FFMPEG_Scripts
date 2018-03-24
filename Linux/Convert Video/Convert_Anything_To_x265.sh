@@ -1,0 +1,14 @@
+#!/bin/sh
+find . -iname '*.mkv' -exec "/home/valkryst/ffmpeg" -threads 1 -i "{}" -codec:v libx265 -x265-params crf=10 -x265-params frame-threads=1 -x265-params psy-rd=1 -c:a copy -c:s copy -max_muxing_queue_size 1024 -map 0 -preset medium "{}.mkv" -y \;
+find . -iname '*.avi' -exec "/home/valkryst/ffmpeg" -threads 1 -i "{}" -codec:v libx265 -x265-params crf=10 -x265-params frame-threads=1 -x265-params psy-rd=1 -c:a copy -c:s copy -max_muxing_queue_size 1024 -map 0 -preset medium "{}.mkv" -y \;
+find . -iname '*.mp4' -exec "/home/valkryst/ffmpeg" -threads 1 -i "{}" -codec:v libx265 -x265-params crf=10 -x265-params frame-threads=1 -x265-params psy-rd=1 -c:a copy -c:s copy -max_muxing_queue_size 1024 -map 0 -preset medium "{}.mkv" -y \;
+find . -iname '*.m2ts' -exec "/home/valkryst/ffmpeg" -threads 1 -i "{}" -codec:v libx265 -x265-params crf=10 -x265-params frame-threads=1 -x265-params psy-rd=1 -c:a copy -c:s copy -max_muxing_queue_size 1024 -map 0 -preset medium "{}.mkv" -y \;
+find . -iname '*.mpg' -exec "/home/valkryst/ffmpeg" -threads 1 -i "{}" -codec:v libx265 -x265-params crf=10 -x265-params frame-threads=1 -x265-params psy-rd=1 -c:a copy -c:s copy -max_muxing_queue_size 1024 -map 0 -preset medium "{}.mkv" -y \;
+find . -iname '*.m4v' -exec "/home/valkryst/ffmpeg" -threads 1 -i "{}" -codec:v libx265 -x265-params crf=10 -x265-params frame-threads=1 -x265-params psy-rd=1 -c:a copy -c:s copy -max_muxing_queue_size 1024 -map 0 -preset medium "{}.mkv" -y \;
+find . -iname '*.mov' -exec "/home/valkryst/ffmpeg" -threads 1 -i "{}" -codec:v libx265 -x265-params crf=10 -x265-params frame-threads=1 -x265-params psy-rd=1 -c:a copy -c:s copy -max_muxing_queue_size 1024 -map 0 -preset medium "{}.mkv" -y \;
+find . -iname '*.wmv' -exec "/home/valkryst/ffmpeg" -threads 1 -i "{}" -codec:v libx265 -x265-params crf=10 -x265-params frame-threads=1 -x265-params psy-rd=1 -c:a copy -c:s copy -max_muxing_queue_size 1024 -map 0 -preset medium "{}.mkv" -y \;
+find . -iname '*.ts' -exec "/home/valkryst/ffmpeg" -threads 1 -i "{}" -codec:v libx265 -x265-params crf=10 -x265-params frame-threads=1 -x265-params psy-rd=1 -c:a copy -c:s copy -max_muxing_queue_size 1024 -map 0 -preset medium "{}.mkv" -y \;
+find . -iname '*.divx' -exec "/home/valkryst/ffmpeg" -threads 1 -i "{}" -codec:v libx265 -x265-params crf=10 -x265-params frame-threads=1 -x265-params psy-rd=1 -c:a copy -c:s copy -max_muxing_queue_size 1024 -map 0 -preset medium "{}.mkv" -y \;
+find . -iname '*.flv' -exec "/home/valkryst/ffmpeg" -threads 1 -i "{}" -codec:v libx265 -x265-params crf=10 -x265-params frame-threads=1 -x265-params psy-rd=1 -c:a copy -c:s copy -max_muxing_queue_size 1024 -map 0 -preset medium "{}.mkv" -y \;
+find . -iname '*.webm' -exec "/home/valkryst/ffmpeg" -threads 1 -i "{}" -codec:v libx265 -x265-params crf=10 -x265-params frame-threads=1 -x265-params psy-rd=1 -c:a copy -c:s copy -max_muxing_queue_size 1024 -map 0 -preset medium "{}.mkv" -y \;
+done
